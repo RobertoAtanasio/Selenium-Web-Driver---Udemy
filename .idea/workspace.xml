@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c47a8af4-5495-483a-87bf-ef54ad83d3a5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/InformacoesUsuarioTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/InformacoesUsuarioTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -31,12 +30,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/tests/InformacoesUsuarioTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+            <state relative-caret-position="154">
+              <caret line="67" column="47" selection-start-line="67" selection-start-column="47" selection-end-line="67" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1564#1565#0" expanded="true" />
-                <element signature="e#1620#1621#0" expanded="true" />
+                <element signature="e#3440#3441#0" expanded="true" />
+                <element signature="e#3496#3497#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -159,19 +158,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="InformacoesUsuarioTest_testAdicionarUmaInforcacaoAdicionalDoUsuario - 2019.06.05 at 10h 21m 16s.xml">
+    <history-entry file="InformacoesUsuarioTest_testAdicionarUmaInforcacaoAdicionalDoUsuario - 2019.06.05 at 12h 01m 31s.xml">
       <configuration name="InformacoesUsuarioTest.testAdicionarUmaInforcacaoAdicionalDoUsuario" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InformacoesUsuarioTest_testAdicionarUmaInforcacaoAdicionalDoUsuario - 2019.06.05 at 10h 22m 25s.xml">
+    <history-entry file="InformacoesUsuarioTest_testAdicionarUmaInforcacaoAdicionalDoUsuario - 2019.06.05 at 12h 19m 12s.xml">
       <configuration name="InformacoesUsuarioTest.testAdicionarUmaInforcacaoAdicionalDoUsuario" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InformacoesUsuarioTest_testAdicionarUmaInforcacaoAdicionalDoUsuario - 2019.06.05 at 10h 30m 27s.xml">
+    <history-entry file="InformacoesUsuarioTest_testAdicionarUmaInforcacaoAdicionalDoUsuario - 2019.06.05 at 12h 20m 17s.xml">
       <configuration name="InformacoesUsuarioTest.testAdicionarUmaInforcacaoAdicionalDoUsuario" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InformacoesUsuarioTest_testAdicionarUmaInforcacaoAdicionalDoUsuario - 2019.06.05 at 10h 33m 44s.xml">
+    <history-entry file="InformacoesUsuarioTest_testAdicionarUmaInforcacaoAdicionalDoUsuario - 2019.06.05 at 12h 36m 41s.xml">
       <configuration name="InformacoesUsuarioTest.testAdicionarUmaInforcacaoAdicionalDoUsuario" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InformacoesUsuarioTest_testAdicionarUmaInforcacaoAdicionalDoUsuario - 2019.06.05 at 10h 43m 58s.xml">
+    <history-entry file="InformacoesUsuarioTest_testAdicionarUmaInforcacaoAdicionalDoUsuario - 2019.06.05 at 12h 38m 27s.xml">
+      <configuration name="InformacoesUsuarioTest.testAdicionarUmaInforcacaoAdicionalDoUsuario" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InformacoesUsuarioTest_testAdicionarUmaInforcacaoAdicionalDoUsuario - 2019.06.05 at 12h 41m 37s.xml">
+      <configuration name="InformacoesUsuarioTest.testAdicionarUmaInforcacaoAdicionalDoUsuario" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InformacoesUsuarioTest_testAdicionarUmaInforcacaoAdicionalDoUsuario - 2019.06.05 at 12h 42m 41s.xml">
+      <configuration name="InformacoesUsuarioTest.testAdicionarUmaInforcacaoAdicionalDoUsuario" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InformacoesUsuarioTest_testAdicionarUmaInforcacaoAdicionalDoUsuario - 2019.06.05 at 12h 49m 03s.xml">
+      <configuration name="InformacoesUsuarioTest.testAdicionarUmaInforcacaoAdicionalDoUsuario" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InformacoesUsuarioTest_testAdicionarUmaInforcacaoAdicionalDoUsuario - 2019.06.05 at 12h 53m 10s.xml">
+      <configuration name="InformacoesUsuarioTest.testAdicionarUmaInforcacaoAdicionalDoUsuario" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InformacoesUsuarioTest_testAdicionarUmaInforcacaoAdicionalDoUsuario - 2019.06.05 at 12h 56m 49s.xml">
       <configuration name="InformacoesUsuarioTest.testAdicionarUmaInforcacaoAdicionalDoUsuario" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -193,7 +207,7 @@
       <window_info anchor="bottom" id="Messages" weight="0.3289689" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.25859246" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2569558" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -218,12 +232,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/InformacoesUsuarioTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+        <state relative-caret-position="154">
+          <caret line="67" column="47" selection-start-line="67" selection-start-column="47" selection-end-line="67" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1564#1565#0" expanded="true" />
-            <element signature="e#1620#1621#0" expanded="true" />
+            <element signature="e#3440#3441#0" expanded="true" />
+            <element signature="e#3496#3497#0" expanded="true" />
           </folding>
         </state>
       </provider>

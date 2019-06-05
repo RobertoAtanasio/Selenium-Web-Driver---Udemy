@@ -1,0 +1,44 @@
+
+Site utilizado para os testes: http://www.juliodelima.com.br/taskit/
+
+Comandos XPATH:
+---------------
+
+//a[@data-target="signupbox"]			contém o string informado
+//*[@data-target="signupbox"]			contém o string informado
+
+//a[contains(@data-target ,"signup")]	contém parte do string informado
+
+//a[text()="Task it!"]
+//a[text()="Ok, I wanna sign up now"]
+
+
+//footer//ul/li[2]							os dois aqui são iguais
+//footer//ul/li[last()]						obtém o último elemento
+//footer/div/div/div/ul/li
+//footer/div/div/div/ul/li[2]				vai identificar apenas o 2o elemento
+//footer//ul/li[2]/preceding-sibling::li	obter o irmão anterior da tag li
+//footer//ul/li[3]/following-sibling::li	obter o elemento irmão seguinte
+
+Comandos CSS Selector:
+----------------------
+
+a[id="signup"]
+#signup
+
+a[data-target="signupbox"]				contém o string informado
+
+a[data-target*="signup"]				contém parte do string informado
+
+div[class="container"]
+.container
+
+footer ul li							encontrará 4 elementos. Os espaços indicam que se pode pesquisar dentro de qualquer elemento filho
+footer ul>li							procura-se dentro de qualquer filho de footer, mas dentro do ul deve-se seguir a hierarquia de filho
+footer>div>div>div>ul>li				tem-se que seguir a hierarquia informada, uma após a outra
+footer ul>li:nth-child(2)				obter o 2o elemento da lista
+footer ul>li:first-child				obter o 1o elemento
+footer ul>li:last-child					obter o último elemento
+
+
+
