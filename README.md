@@ -33,3 +33,7 @@ Método público, sem retorno e estático usado para executar comandos depois da
 
 @Ignore(String motivo)
 Permite que testes sejam ignorados.
+
+A classe Select foi usada para ter acesso a métodos que não foram disponibilizados nativamente na interface WebElement. Veja abaixo a relação completa de métodos disponíveis para interação com comboboxes:
+
+http://seleniumhq.github.io/selenium/docs/api/java/index.html
