@@ -30,12 +30,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/tests/InformacoesUsuarioTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="67" column="47" selection-start-line="67" selection-start-column="47" selection-end-line="67" selection-end-column="47" />
+            <state relative-caret-position="290">
+              <caret line="89" column="61" selection-start-line="89" selection-start-column="61" selection-end-line="89" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3440#3441#0" expanded="true" />
-                <element signature="e#3496#3497#0" expanded="true" />
+                <element signature="e#4164#4165#0" expanded="true" />
+                <element signature="e#4220#4221#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -121,7 +121,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.InformacoesUsuarioTest.testRemoverUmContatoDeUmUsuario">
     <configuration name="InformacoesUsuarioTest.testAdicionarUmaInforcacaoAdicionalDoUsuario" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="webDriver" />
       <extension name="coverage">
@@ -138,8 +138,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="InformacoesUsuarioTest.testRemoverUmContatoDeUmUsuario" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="webDriver" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.InformacoesUsuarioTest" />
+      <option name="METHOD_NAME" value="testRemoverUmContatoDeUmUsuario" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.InformacoesUsuarioTest.testRemoverUmContatoDeUmUsuario" />
         <item itemvalue="JUnit.InformacoesUsuarioTest.testAdicionarUmaInforcacaoAdicionalDoUsuario" />
       </list>
     </recent_temporary>
@@ -158,18 +175,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="InformacoesUsuarioTest_testAdicionarUmaInforcacaoAdicionalDoUsuario - 2019.06.05 at 12h 01m 31s.xml">
-      <configuration name="InformacoesUsuarioTest.testAdicionarUmaInforcacaoAdicionalDoUsuario" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="InformacoesUsuarioTest_testAdicionarUmaInforcacaoAdicionalDoUsuario - 2019.06.05 at 12h 19m 12s.xml">
-      <configuration name="InformacoesUsuarioTest.testAdicionarUmaInforcacaoAdicionalDoUsuario" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="InformacoesUsuarioTest_testAdicionarUmaInforcacaoAdicionalDoUsuario - 2019.06.05 at 12h 20m 17s.xml">
-      <configuration name="InformacoesUsuarioTest.testAdicionarUmaInforcacaoAdicionalDoUsuario" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="InformacoesUsuarioTest_testAdicionarUmaInforcacaoAdicionalDoUsuario - 2019.06.05 at 12h 36m 41s.xml">
-      <configuration name="InformacoesUsuarioTest.testAdicionarUmaInforcacaoAdicionalDoUsuario" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="InformacoesUsuarioTest_testAdicionarUmaInforcacaoAdicionalDoUsuario - 2019.06.05 at 12h 38m 27s.xml">
       <configuration name="InformacoesUsuarioTest.testAdicionarUmaInforcacaoAdicionalDoUsuario" configurationId="JUnit" />
     </history-entry>
@@ -187,6 +192,18 @@
     </history-entry>
     <history-entry file="InformacoesUsuarioTest_testAdicionarUmaInforcacaoAdicionalDoUsuario - 2019.06.05 at 12h 56m 49s.xml">
       <configuration name="InformacoesUsuarioTest.testAdicionarUmaInforcacaoAdicionalDoUsuario" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InformacoesUsuarioTest_testAdicionarUmaInforcacaoAdicionalDoUsuario - 2019.06.05 at 12h 57m 59s.xml">
+      <configuration name="InformacoesUsuarioTest.testAdicionarUmaInforcacaoAdicionalDoUsuario" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InformacoesUsuarioTest_testRemoverUmContatoDeUmUsuario - 2019.06.05 at 13h 47m 30s.xml">
+      <configuration name="InformacoesUsuarioTest.testRemoverUmContatoDeUmUsuario" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InformacoesUsuarioTest_testRemoverUmContatoDeUmUsuario - 2019.06.05 at 15h 33m 53s.xml">
+      <configuration name="InformacoesUsuarioTest.testRemoverUmContatoDeUmUsuario" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InformacoesUsuarioTest_testRemoverUmContatoDeUmUsuario - 2019.06.05 at 15h 39m 45s.xml">
+      <configuration name="InformacoesUsuarioTest.testRemoverUmContatoDeUmUsuario" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -232,12 +249,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/InformacoesUsuarioTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="67" column="47" selection-start-line="67" selection-start-column="47" selection-end-line="67" selection-end-column="47" />
+        <state relative-caret-position="290">
+          <caret line="89" column="61" selection-start-line="89" selection-start-column="61" selection-end-line="89" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3440#3441#0" expanded="true" />
-            <element signature="e#3496#3497#0" expanded="true" />
+            <element signature="e#4164#4165#0" expanded="true" />
+            <element signature="e#4220#4221#0" expanded="true" />
           </folding>
         </state>
       </provider>

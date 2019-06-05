@@ -8,7 +8,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.concurrent.TimeUnit;
 
@@ -23,10 +25,6 @@ public class InformacoesUsuarioTest {
         navegador.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);  // espera até 5 segundos para carregar os itens da página
         navegador.manage().window().maximize();
         navegador.get("http://www.juliodelima.com.br/taskit");  // abrir o site
-    }
-
-    @Test
-    public void testAdicionarUmaInforcacaoAdicionalDoUsuario() {
 
         navegador.findElement(By.linkText("Sign in")).click();  // clicar no elemento "Sign in"
         WebElement formularioSignInBox = navegador.findElement(By.id("signinbox"));
@@ -34,14 +32,12 @@ public class InformacoesUsuarioTest {
         formularioSignInBox.findElement(By.name("password")).sendKeys("123456");
         formularioSignInBox.findElement(By.linkText("SIGN IN")).click();
 
-        // clicar em um link que tenha o texto "me"
-        WebElement me = navegador.findElement(By.className("me"));  // obter o elemento
-        String textoMe = me.getText();
-        me.click();
-//        navegador.findElement(By.className("me")).click();
-
-        // clicar em um link que tenha o texto "MORE DATA ABOUT YOU"
+        navegador.findElement(By.className("me")).click();  // obter e clicar no elemento
         navegador.findElement(By.linkText("MORE DATA ABOUT YOU")).click();
+    }
+
+//    @Test
+    public void testAdicionarUmaInforcacaoAdicionalDoUsuario() {
 
         // clicar em um botão através do seu XPath: //div[@id="moredata"]//button[@data-target="addmoredata"]
         navegador.findElement(By.xpath("//div[@id=\"moredata\"]//button[@data-target=\"addmoredata\"]")).click();
@@ -67,11 +63,30 @@ public class InformacoesUsuarioTest {
                 .findElement(By.xpath("//div[@id=\"toast-container\"]//div[@class=\"toast rounded\"]"));
         String textoToast = webToast.getText();
 
-        System.out.println(">>> textoMe: " + textoMe);
-        System.out.println(">>> textoToast: " + textoToast);
         //--- Validação
-        Assert.assertEquals("Hi, Julio", textoMe);
         Assert.assertEquals("Your contact has been added!", textoToast);
+    }
+
+    @Test
+    public void testRemoverUmContatoDeUmUsuario() {
+        // clicar no elemento pelo XPath
+        navegador.findElement(By.xpath("//span[text()=\"+558199887766\"]/following-sibling::a")).click();
+
+        navegador.switchTo().alert().accept();  // confimar a janela javascript
+
+        // validar se a mensagem apresentada foi 'Rest in peace, dear phone!'
+        WebElement webToast = navegador
+                .findElement(By.xpath("//div[@id=\"toast-container\"]//div[@class=\"toast rounded\"]"));
+        String textoToast = webToast.getText();     // obter o texto da mensagem
+        Assert.assertEquals("Rest in peace, dear phone!", textoToast);
+
+        // aguardar até 10 segundos para que a janela desapareça.
+        // é uma espera explícita de 10 segundos para o navegador
+        WebDriverWait aguardar = new WebDriverWait(navegador, 10);
+        aguardar.until(ExpectedConditions.stalenessOf(webToast));
+
+        // clicar no link com texto 'Logout'
+        navegador.findElement(By.linkText("Logout")).click();
     }
 
     @After
