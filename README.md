@@ -37,3 +37,24 @@ Permite que testes sejam ignorados.
 A classe Select foi usada para ter acesso a métodos que não foram disponibilizados nativamente na interface WebElement. Veja abaixo a relação completa de métodos disponíveis para interação com comboboxes:
 
 http://seleniumhq.github.io/selenium/docs/api/java/index.html
+
+Lembre-se, todos os métodos de teste precisam ter a anotação @Test e serem públicos e sem retorno, ou seja, void.
+
+XPath é um completo mecanismo de pesquisa em arquivos baseados em XML, além dos comando básicos de pesquisa, há uma série de métodos e axes que permitem navegar em elementos que estão ao redor de um determinado elemento. Vimos isso na utilização dos axes ancestor e following. Veja abaixo uma lista com todos os axes disponíveis no XPath:
+
+https://www.w3schools.com/xml/xpath_axes.asp
+
+A classe ExpectedConditions possui uma série de estratégias. Elas nos ajudam a criar formas de aguardar que certos eventos aconteçam, como por exemplos que um determinado seja removido do DOM (caso que vimos no vídeo relacionado ao staleness). Abaixo está um link com todas as estratégias de espera, ou seja, métodos da classe ExpectedConditions:
+
+https://seleniumhq.github.io/selenium/docs/api/java/org/openqa/selenium/support/ui/ExpectedConditions.html
+
+As estratégias mais utilizadas são:
+
+alertIsPresent()  
+Aguarda até que uma mensagem Javascript seja apresentada.
+
+elementToBeClickable(By localizador) 
+Aguarda até que um elemento esteja pronto para receber um clique, por exemplo, ele poderia ficar desabilitado durante algum período e então teríamos de esperar até que ficasse habilitado novamente.
+
+visibilityOfElementLocated(By localizador) 
+Aguarda até que as propriedades CSS display e hidden possuam valores que possibilitam a visualização do elemento pelo usuário.
