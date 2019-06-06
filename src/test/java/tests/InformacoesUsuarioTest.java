@@ -1,9 +1,7 @@
 package tests;
 
-import org.junit.After;
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.*;
+import org.junit.rules.TestName;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,12 +9,17 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import suporte.Generator;
+import suporte.Screenshot;
 
 import java.util.concurrent.TimeUnit;
 
 public class InformacoesUsuarioTest {
 
     private WebDriver navegador;
+
+    @Rule
+    public TestName test = new TestName();
 
     @Before
     public void setUp() {
@@ -79,6 +82,10 @@ public class InformacoesUsuarioTest {
                 .findElement(By.xpath("//div[@id=\"toast-container\"]//div[@class=\"toast rounded\"]"));
         String textoToast = webToast.getText();     // obter o texto da mensagem
         Assert.assertEquals("Rest in peace, dear phone!", textoToast);
+
+        String nomeArquivo = "C:\\Roberto\\Udemy\\IdeaProj\\teste-screenshot\\taskit\\"
+                + Generator.dataHoraParaArquivo() + test.getMethodName() + ".png";
+        Screenshot.tirar(navegador,nomeArquivo);
 
         // aguardar até 10 segundos para que a janela desapareça.
         // é uma espera explícita de 10 segundos para o navegador
