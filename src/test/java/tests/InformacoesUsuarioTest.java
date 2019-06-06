@@ -1,7 +1,11 @@
 package tests;
 
+import org.easetech.easytest.annotation.DataLoader;
+import org.easetech.easytest.annotation.Param;
+import org.easetech.easytest.runner.DataDrivenTestRunner;
 import org.junit.*;
 import org.junit.rules.TestName;
+import org.junit.runner.RunWith;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -14,6 +18,8 @@ import suporte.Screenshot;
 
 import java.util.concurrent.TimeUnit;
 
+@RunWith(DataDrivenTestRunner.class)
+@DataLoader(filePaths = "InformacoesUsuarioTest.csv")
 public class InformacoesUsuarioTest {
 
     private WebDriver navegador;
@@ -39,8 +45,12 @@ public class InformacoesUsuarioTest {
         navegador.findElement(By.linkText("MORE DATA ABOUT YOU")).click();
     }
 
-//    @Test
-    public void testAdicionarUmaInforcacaoAdicionalDoUsuario() {
+    @Test
+    public void testAdicionarUmaInforcacaoAdicionalDoUsuario(@Param(name="tipo") String tipo, @Param(name="contato") String contato, @Param(name="mensagem") String mensagem) {
+
+        System.out.println("tipo: " + tipo);
+        System.out.println("contato: " + contato);
+        System.out.println("mensagem: " + mensagem);
 
         // clicar em um botão através do seu XPath: //div[@id="moredata"]//button[@data-target="addmoredata"]
         navegador.findElement(By.xpath("//div[@id=\"moredata\"]//button[@data-target=\"addmoredata\"]")).click();
@@ -50,13 +60,13 @@ public class InformacoesUsuarioTest {
 
         // na combo de name "type" escolher a opção "Phone"
         WebElement campoType = popup.findElement(By.name("type"));
-        new Select(campoType).selectByValue("phone");
+        new Select(campoType).selectByValue(tipo);
 
 //        popup.findElement(By.xpath("//select/option[@value=\"phone\"]"));
 
         // No campo de name "contact"  digitar +558199887766
 //        popup.findElement(By.xpath("//input[@name=\"contact\"]")).sendKeys("+558199887766");
-        popup.findElement(By.name("contact")).sendKeys("+558199887766");
+        popup.findElement(By.name("contact")).sendKeys(contato);
 
         // Clicar no link que tenha o Texto "SAVE" ou XPath: //div[@id="addmoredata"]//a[text()="Save"]
         popup.findElement(By.linkText("SAVE")).click();
@@ -67,7 +77,7 @@ public class InformacoesUsuarioTest {
         String textoToast = webToast.getText();
 
         //--- Validação
-        Assert.assertEquals("Your contact has been added!", textoToast);
+        Assert.assertEquals(mensagem, textoToast);
     }
 
     @Test
