@@ -58,3 +58,19 @@ Aguarda até que um elemento esteja pronto para receber um clique, por exemplo, 
 
 visibilityOfElementLocated(By localizador) 
 Aguarda até que as propriedades CSS display e hidden possuam valores que possibilitam a visualização do elemento pelo usuário.
+
+Data-Driven Testing é uma estratégia de testes que visa impedir a duplicação de scripts quando apenas os dados de entrada ou saída são diferentes. A idéia, como vimos no vídeo, é inputar parâmetros de entrada e saída nos métodos de teste e fazer com que os testes consumam um arquivo externo com os dados que serão utilizados nos testes. Quanto mais linhas o arquivo externo tiver, mais testes são executados.
+
+Além do formato CSV, é possível trabalhar com XLS (Excel) ou mesmo JSON como DataLoader. Abaixo segue os links com os artigos que apresentam como usar esses outros DataLoaders:
+
+https://github.com/EaseTech/easytest-core/wiki/Passing-JSON-Object-in-test-data
+https://github.com/EaseTech/easytest/wiki/EasyTest-:-Loading-Data-using-Excel
+
+O Easy Test permite a adição de dados de mais de um teste no arquivo de base de dados, vejamos como seria:
+
+# Arquivo: ClasseDeTesteComDoisMetodos.csv
+
+meuPrimeiroMetodo,nome,idade,mensagem
+                 ,Julio,31,Sucesso
+meuSegundoMetodo,salario,mensagem
+                ,1000,Sucesso
