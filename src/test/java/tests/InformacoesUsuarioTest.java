@@ -46,7 +46,10 @@ public class InformacoesUsuarioTest {
     }
 
     @Test
-    public void testAdicionarUmaInforcacaoAdicionalDoUsuario(@Param(name="tipo") String tipo, @Param(name="contato") String contato, @Param(name="mensagem") String mensagem) {
+    public void testAdicionarUmaInforcacaoAdicionalDoUsuario(
+            @Param(name="tipo") String tipo,
+            @Param(name="contato") String contato,
+            @Param(name="mensagem") String mensagem) {
 
         System.out.println("tipo: " + tipo);
         System.out.println("contato: " + contato);

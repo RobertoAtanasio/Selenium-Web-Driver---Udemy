@@ -1,6 +1,6 @@
-testAdicionarUmaInforcacaoAdicionalDoUsuario,tipo,contato,mensagem,Duration(ms)
-"",phone,+5581988776655,Your contact has been added!,993.0
-"",phone,+5581988776656,Your contact has been added!,1051.0
-"",phone,+5581988776657,Your contact has been added!,961.0
-"",email,teste81@gmail.com,Your contact has been added!,956.0
-"",email,teste87@gmail.com,Your contact has been added!,963.0
+testAdicionarUmaInforcacaoAdicionalDoUsuario,tipo,contato,mensagem,Duration(ms),Duration(ms)
+"",phone,+5581988776655,Your contact has been added!,1918.0,1918.0
+"",phone,+5581988776656,Your contact has been added!,1524.0,1524.0
+"",phone,+5581988776657,Your contact has been added!,1352.0,1352.0
+"",email,teste81@gmail.com,Your contact has been added!,1150.0,1150.0
+"",email,teste87@gmail.com,Your contact has been added!,1362.0,1362.0
