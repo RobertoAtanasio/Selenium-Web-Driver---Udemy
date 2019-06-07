@@ -74,3 +74,12 @@ meuPrimeiroMetodo,nome,idade,mensagem
                  ,Julio,31,Sucesso
 meuSegundoMetodo,salario,mensagem
                 ,1000,Sucesso
+                
+Segundo Martin Fowler, a regra de ouro do Page Objects é permitir que todo software possa fazer qualquer interação que um humano faria perante ao software além de ver tudo o que ele veria.
+
+https://martinfowler.com/bliki/PageObject.html
+
+Lembretes:
+Ao adicionar um método em uma página devemos saber qual é a próxima page para ele
+Toda page precisa ter uma construtor que alimente a propriedade navegador, do tipo WebDriver
+A classe inicial deve ser instanciada e deve ser usada dentro de um teste 
