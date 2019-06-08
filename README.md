@@ -83,3 +83,9 @@ Lembretes:
 Ao adicionar um método em uma página devemos saber qual é a próxima page para ele
 Toda page precisa ter uma construtor que alimente a propriedade navegador, do tipo WebDriver
 A classe inicial deve ser instanciada e deve ser usada dentro de um teste 
+
+Asserções em Page Objects tem um debate muito constante, a pergunta é: faço asserções dentro da página ou coloco-as dentro dos métodos de uma classe da Page, chamado "validarAlgo" por exemplo.
+
+Segundo Martin Fowler, devemos deixar asserções dentro dos testes e não dentro das pages, para evitar duplicações e também para dar responsabilidade única às páginas:
+
+"There are differences of opinion on whether page objects should include assertions themselves, or just provide data for test scripts to do the assertions. Advocates of including assertions in page objects say that this helps avoid duplication of assertions in test scripts, makes it easier to provide better error messages, and supports a more TellDontAsk style API. Advocates of assertion-free page objects say that including assertions mixes the responsibilities of providing access to page data with assertion logic, and leads to a bloated page object."
