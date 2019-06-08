@@ -1,16 +1,18 @@
 package tests;
 
+import org.easetech.easytest.annotation.DataLoader;
 import org.easetech.easytest.annotation.Param;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Rule;
-import org.junit.Test;
+import org.easetech.easytest.runner.DataDrivenTestRunner;
+import org.junit.*;
 import org.junit.rules.TestName;
+import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
-import pages.LoginFormPage;
 import pages.LoginPage;
+
 import suporte.Web;
 
+@RunWith(DataDrivenTestRunner.class)
+@DataLoader(filePaths = "InformacoesUsuarioPageObjectTest.csv")
 public class InformacoesUsuarioPageObjectTest {
 
     private WebDriver navegador;
@@ -25,13 +27,21 @@ public class InformacoesUsuarioPageObjectTest {
 
     @Test
     public void testAdicionarUmaInforcacaoAdicionalDoUsuario(
+            @Param(name="login") String login,
+            @Param(name="senha") String senha,
             @Param(name="tipo") String tipo,
             @Param(name="contato") String contato,
-            @Param(name="mensagem") String mensagem) {
-        new LoginPage(navegador)
-                .clickSignIn()
-                .typeLogin("julio0001")
-                .typePassword("123456");
+            @Param(name="mensagem") String mensagemEsperada ) {
+        String textoToast = new LoginPage(navegador)
+                .clicarSignIn()
+                .fazerLogin(login, senha)
+                .clicarME()
+                .clicarNaAbaMoreDataAboutYou()
+                .clicarBotaoAddMoreDataAboutYou()
+                .adicionarContato(tipo, contato)
+                .capturarTextoToast();
+
+        Assert.assertEquals(mensagemEsperada, textoToast);
     }
 
     @After

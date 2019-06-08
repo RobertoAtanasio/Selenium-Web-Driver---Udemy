@@ -3,23 +3,33 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class LoginFormPage {
+public class LoginFormPage extends BasePage {
 
-    private WebDriver navegador;
-
-    public LoginFormPage(WebDriver navegador) {
-        this.navegador = navegador;
+    public LoginFormPage(WebDriver navegador){
+        super(navegador);
     }
 
-    public LoginFormPage typeLogin(String login){
+    public LoginFormPage digitarLogin(String login){
         navegador.findElement(By.id("signinbox"))
                 .findElement(By.name("login")).sendKeys(login);
         return this;
     }
 
-    public LoginFormPage typePassword(String passsword){
+    public LoginFormPage digitarSenha(String senha){
         navegador.findElement(By.id("signinbox"))
-                .findElement(By.name("password")).sendKeys(passsword);
+                .findElement(By.name("password")).sendKeys(senha);
         return this;
+    }
+
+    public SecretaPage clicarSignIn() {
+        navegador.findElement(By.id("signinbox"))
+                .findElement(By.linkText("SIGN IN")).click();
+        return new SecretaPage(navegador);
+    }
+
+    public SecretaPage fazerLogin(String login, String senha) {
+        this.digitarLogin(login);
+        this.digitarSenha(senha);
+        return this.clicarSignIn();
     }
 }
