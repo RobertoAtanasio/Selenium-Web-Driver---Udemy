@@ -41,4 +41,13 @@ footer ul>li:first-child				obter o 1o elemento
 footer ul>li:last-child					obter o último elemento
 
 
+PARA EXECUTAR VIA LINHA DE COMANDO
+----------------------------------
 
+1. No diretório onde está o pom.xml, executar:
+
+	// executar os teste de uma classe específica
+	mvn clean test -Dtest=tests.InformacoesUsuarioPageObjectTest
+	
+	// executar o teste de um método de uma classe específica
+	mvn clean test -Dtest=tests.InformacoesUsuarioPageObjectTest#testAdicionarUmaInforcacaoAdicionalDoUsuario
